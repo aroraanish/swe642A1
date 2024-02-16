@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Language declaration -->
+<head>
+ 
+  <title>CS Department Survey</title> <!-- Title of the page -->
+ <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag for responsive design -->
+  <title>CS Department Information</title> <!-- Title of the page -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS link -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- W3.CSS link -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> <!-- Google Fonts link -->
+<link rel="stylesheet" href="surveystyle.css">
+</head>
+<body>
+<div class="header">
+  <img src="GMU3.png" alt="Heading">
+</div>
+
+  <div class="container"> <!-- Bootstrap container -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="mt-4" >Welcome to CS Department Survey Form</h1> <!-- Heading of the survey -->
+        <form class="survey-form" autocomplete="on"> <!-- Survey form -->
+          <div class="form-group">
+            <label for="username">Username<span class="required">*</span></label> <!-- Username input field -->
+            <input type="text" class="form-control" id="username" name="username" required placeholder="e.g., JohnDoe123">
+          </div>
+          <!-- Address fields -->
+          <div class="form-group">
+            <label for="address">Street Address<span class="required">*</span></label>
+            <input type="text" class="form-control" id="address" name="address" required placeholder="123 Main St">
+          </div>
+          <!-- City, state, and zip fields -->
+          <div class="form-row">
+            <!-- City -->
+            <div class="form-group col-md-6">
+              <label for="city">City<span class="required">*</span></label>
+              <input type="text" class="form-control" id="city" name="city" required placeholder="New York">
+            </div>
+            <!-- State -->
+            <div class="form-group col-md-4">
+              <label for="state">State<span class="required">*</span></label>
+              <input type="text" class="form-control" id="state" name="state" required placeholder="NY">
+            </div>
+            <!-- Zip -->
+            <div class="form-group col-md-2">
+              <label for="zip">Zip<span class="required">*</span></label>
+              <input type="text" class="form-control" id="zip" name="zip" required placeholder="10001">
+            </div>
+          </div>
+          <!-- Telephone, email, URL, and date fields -->
+          <div class="form-group">
+            <label for="telephone">Telephone<span class="required">*</span></label>
+            <input type="tel" class="form-control" id="telephone" name="telephone" required placeholder="123-456-7890">
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" class="form-control" id="email" name="email" required placeholder="example@example.com">
+          </div>
+          <div class="form-group">
+            <label for="url">URL<span class="required">*</span></label>
+            <input type="url" class="form-control" id="url" name="url" required placeholder="http://example.com">
+          </div>
+          <div class="form-group">
+            <label for="survey-date">Date of Survey<span class="required">*</span></label>
+            <input type="date" class="form-control" id="survey-date" name="survey-date" required>
+          </div>
+          <!-- Liked aspects checkboxes -->
+          <div class="form-group">
+            <label>What did you like most about the campus?<span class="required">*</span></label><br>
+            <!-- Checkboxes for various aspects -->
+        <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="likes-students" name="likes" value="students">
+    <label class="form-check-label" for="likes-students">Students</label>
+</div>
+
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="likes-location" name="likes" value="location">
+    <label class="form-check-label" for="likes-location">Location</label>
+</div>
+
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="likes-campus" name="likes" value="campus">
+    <label class="form-check-label" for="likes-campus">Campus</label>
+</div>
+
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="likes-atmosphere" name="likes" value="atmosphere">
+    <label class="form-check-label" for="likes-atmosphere">Atmosphere</label>
+</div>
+
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="likes-dormrooms" name="likes" value="dorrooms">
+    <label class="form-check-label" for="likes-dormrooms">Dorm Rooms</label>
+</div>
+
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="likes-sport" name="likes" value="sport">
+    <label class="form-check-label" for="likes-sport">Sport</label>
+</div>
+          </div>
+          <!-- Interest radio buttons -->
+          <div class="form-group">
+            <label>How did you become interested in the university?<span class="required">*</span></label><br>
+           <div class="form-check form-check-inline">
+    <div>
+        <input class="form-check-input" type="radio" id="interest-friends" name="interest" value="friends">
+        <label class="form-check-label" for="interest-friends">Friends</label>
+    </div>
+    <div>
+        <input class="form-check-input" type="radio" id="interest-television" name="interest" value="television">
+        <label class="form-check-label" for="interest-television">Television</label>
+    </div>
+    <div>
+        <input class="form-check-input" type="radio" id="interest-internet" name="interest" value="internet">
+        <label class="form-check-label" for="interest-internet">Internet</label>
+    </div>
+    <div>
+        <input class="form-check-input" type="radio" id="interest-other" name="interest" value="other">
+        <label class="form-check-label" for="interest-other">Other</label>
+    </div>
+</div>
+
+
+          </div>
+          
+          <div class="form-group">
+            <label for="likelihood">Likelihood of Recommending this School<span class="required">*</span></label>
+            <!-- Dropdown for likelihood -->
+            <select class="form-control" id="likelihood" name="likelihood" required>
+              <option value="">Select likelihood</option>
+              <option value="Very Likely">Very Likely</option>
+              <option value="Likely">Likely</option>
+              <option value="Unlikely">Unlikely</option>
+            </select>
+          </div>
+			<!-- Additional comments -->
+			<div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+          </div>
+          <div class="form-group">
+
+            <label for="form-label">High School Graduation:</label> <br>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input list="month" name="form-label" id="form-label" placeholder="month" style="width: 100%;">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" id="form-label" name="form-label" placeholder="year"style="width: 100%;"> 
+              </div>
+            </div>
+            
+
+<datalist id="month">
+  <option value="January">
+  <option value="February">
+  <option value="March">
+  <option value="April">
+  <option value="May">
+  <option value="June">
+  <option value="July">
+  <option value="August">
+  <option value="September">
+  <option value="October">
+  <option value="November">
+  <option value="December">
+</datalist>
+
+          </div>
+          <input class="btn" type="submit" value="Submit" style="background-color: #006633; color: white;">  <!-- Submit button -->
+          <input class="btn" type="reset" value="Reset" style="background-color: #FFCC33; color: white;"> <!-- Reset button -->
+        </form>
+      </div>
+    </div>
+	  	  <!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Created by Anish Arora</p>
+</footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+  <script>
+    document.getElementById('username').focus();
+  </script>
+</body>
+</html>

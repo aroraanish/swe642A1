@@ -1,0 +1,36 @@
+.header img{
+    width: 400px;
+}
+.header{
+    background-color: white;
+    border: 5px solid #006633; /* Green border */
+padding: 20px; /* Padding */
+box-shadow: 5px 5px 5px #888888; /* Box shadow */
+}
+.form-check-inline {
+display: block;
+}
+body {
+background-color: #f2f2f2; /* Light gray background */
+padding: 20px; /* Padding around the form */
+}
+.survey-form {
+background-color: #fff; /* White background for the form */
+padding: 20px; /* Padding inside the form */
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+h1 {
+color: #006633; /* GMU Green color for heading */
+background-color: #FFCC33; /* GMU Yellow color for heading */
+padding: 5px 10px 5px 10px;
+}
+.required {
+color: red; /* Red color for indicating required fields */
+}
+.btn{
+    background-color: #006633;
+}
+.btn:hover, .btn:active{
+    background-color: #13834b;
+}

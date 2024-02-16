@@ -1,0 +1,47 @@
+@charset "utf-8";
+.hbig {
+  font-size: 3vw; 
+	 font-weight: bold;
+}
+
+.hlow {
+  font-size: 1.5vw; 
+		 font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px) {
+  .hbig {
+    font-size: 4vw; 
+	  	 font-weight: bold;
+
+  }
+
+  .hlow {
+    font-size: 2vw; 
+	  	 font-weight: bold;
+
+  }
+}
+	
+body, html {
+  height: 100%; /* Body and HTML height to 100% */
+  font-family: "Inconsolata", sans-serif; /* Font family */
+}
+.w3-image {
+    max-width: 100%; /* Images are responsive */
+    height: auto;
+}
+
+
+.bgimg {
+  background-position: center; /* Background position to center */
+  background-size: cover; /* Background size to cover */
+  background-image: url("GMU-2.png"); /* Background image */
+  min-height: 75%; /* Minimum height to 75% */
+}
+
+.w3-text-white{
+  background-color: black;
+  padding: 3px 10px 3px 10px;
+}
